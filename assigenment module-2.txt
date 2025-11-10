@@ -1,0 +1,202 @@
+1. What is Exploratory Testing?
+
+Exploratory Testing is an informal testing approach where testers explore the application
+ without predefined test cases, learning the system and designing tests simultaneously.
+
+
+2. What is a Traceability Matrix?
+
+A Traceability Matrix (RTM) maps requirements to test cases to ensure 
+all requirements are covered and validated during testing.
+
+
+
+3. What is Boundary Value Testing?
+
+Boundary Value Testing checks the behavior of software at boundary
+ conditions (minimum, maximum, just inside/outside limits).
+
+
+
+4. What is Equivalence Partitioning Testing?
+
+Equivalence Partitioning divides input data into partitions of equivalent data from which test cases are derived,
+ reducing total test cases while maintaining coverage.
+
+
+
+5. What is Integration Testing?
+
+Integration Testing verifies the interfaces and interaction
+ between integrated components or modules.
+
+
+
+6. What Determines the Level of Risk?
+
+Risk level is determined by impact (severity of failure)
+ and likelihood (probability of occurrence).
+
+
+
+7. What is Alpha Testing?
+
+Alpha Testing is conducted by internal teams (developers/testers)
+ before releasing the product to external users.
+
+
+
+8. What is Beta Testing?
+
+Beta Testing is done by real users in a real environment
+ before final release to gather feedback.
+
+
+
+9. What is Component Testing?
+
+Component (Unit) Testing verifies the functionality 
+of individual modules or components in isolation.
+
+
+
+10. What is Functional System Testing?
+
+It checks the complete system’s functionality as per requirements,
+ ensuring end-to-end behavior works correctly.
+
+
+
+11. What is Non-Functional Testing?
+
+It tests non-functional aspects like performance,
+ security, usability, reliability, and scalability.
+
+
+
+
+13. What is Adhoc Testing?
+
+Adhoc Testing is informal and unstructured testing without planning or documentation,
+ relying on tester intuition.
+
+
+
+14. What is Load Testing?
+
+Load Testing checks system performance
+ under expected user loads.
+
+
+
+15. What is Stress Testing?
+
+Stress Testing evaluates system behavior under 
+extreme or beyond-limit conditions.
+
+
+
+16. What is White Box Testing? List its types.
+
+White Box Testing involves testing internal logic or code structure.
+Types: Statement coverage and Branch coverage.
+
+
+
+17. What is Black Box Testing? What are its techniques?
+
+Black Box Testing focuses on functionality without looking into code.
+Techniques:
+ Equivalence Partitioning, Boundary Value Analysis, Decision Table Testing,
+ State Transition, and Use Case Testing.
+
+
+
+18. Mention Categories of Defects.
+
+Functional Defects
+
+Performance Defects
+
+Usability Defects
+
+Compatibility Defects
+
+Security Defects
+
+
+
+19. What is Big Bang Testing?
+
+Big Bang Testing integrates all components at once and tests
+ the entire system — usually used for small projects.
+
+
+
+20. What is the Purpose of Exit Criteria?
+
+Exit criteria define the conditions under which testing can be
+ stopped (e.g., all critical bugs fixed, 95% test coverage).
+
+
+
+
+22. What are 7 Key Principles of Testing?
+
+Testing shows the presence of defects.
+
+Exhaustive testing is impossible.
+
+Early testing saves time and cost.
+
+Defects cluster together.
+
+Pesticide paradox (tests need updating).
+
+Testing depends on context.
+
+Absence-of-errors fallacy.
+
+
+
+
+24. Difference Between Smoke and Sanity Testing
+
+Smoke Testing: Basic build verification test after a new build.
+
+Sanity Testing: Checks new functionality after minor fixes/updates.
+
+
+
+25. Difference Between Verification and Validation
+
+Verification: Ensures product is built correctly (process check).
+
+Validation: Ensures the right product is built (requirement check).
+
+
+
+26. Types of Performance Testing
+
+Load Testing
+
+Stress Testing
+
+Spike Testing
+
+Endurance (Soak) Testing
+
+Volume Testing
+
+Scalability Testing
+
+
+
+27. What is Error, Defect, Bug, and Failure?
+
+Error: Mistake by developer in code or logic.
+
+Defect/Bug: Error found during testing.
+
+Failure: When system doesn’t perform expected functionality in production.
+
