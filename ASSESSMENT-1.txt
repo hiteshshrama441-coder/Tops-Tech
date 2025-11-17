@@ -1,0 +1,65 @@
+                                                                                       REGISTRATION TEST CASES
+
+
+| Test Case ID | Module       | Test Scenario         | Test Case Description         | Pre-Condition          | Steps                                                          | Test Data             | Expected Result               |
+| ------------ | ------------ | --------------------- | ----------------------------- | ---------------------- | -------------------------------------------------------------- | --------------------- | ----------------------------- |
+| UR-01        | Registration | Valid Registration    | Register with valid details   | App installed          | 1. Open app 2. Go to Register 3. Enter valid details 4. Submit | Name, Email, Password | Successful registration       |
+| UR-02        | Registration | Duplicate Email       | Register using existing email | Account already exists | Same steps                                                     | Email already in DB   | Error: “Email already exists” |
+| UR-03        | Registration | Invalid Email Format  | Enter invalid email           | -                      | Enter: abc@xyz                                                 | Invalid email         | Error message                 |
+| UR-04        | Registration | Password Strength     | Weak password                 | -                      | Enter weak password                                            | 12345                 | Password strength error       |
+| UR-05        | Registration | Mandatory Fields      | Leave fields empty            | -                      | Skip required fields                                           | Empty fields          | Required-field error          |
+| UR-06        | Registration | OTP Delivery          | Verify OTP received           | -                      | Register → Check inbox                                         | Valid phone/email     | OTP received                  |
+| UR-07        | Registration | OTP Expiry            | OTP expires after X min       | OTP generated          | Wait 5 min                                                     | OTP                   | Error: OTP expired            |
+| UR-08        | Registration | OTP Resend            | Request new OTP               | OTP screen open        | Click “Resend”                                                 | -                     | New OTP sent                  |
+| UR-09        | Registration | Wrong OTP             | Enter invalid OTP             | OTP screen open        | Enter wrong OTP                                                | Wrong code            | Error shown                   |
+| UR-10        | Registration | Account Lock          | 3 wrong OTP attempts          | -                      | Enter wrong OTP 3 times                                        | Wrong code            | Account locked                |
+| UR-11        | Registration | Successful Activation | Enter correct OTP             | OTP sent               | Enter correct OTP                                              | Correct OTP           | Account activated             |
+| UR-12        | Registration | UI Validation         | Check UI alignment            | -                      | Check registration page                                        | -                     | No UI issue                   |
+| UR-13        | Registration | Network Fail          | Turn off internet             | No internet            | Register                                                       | Valid details         | Error shown                   |
+| UR-14        | Registration | Validation Messages   | Field validation              | -                      | Trigger errors                                                 | -                     | Proper validation text        |
+| UR-15        | Registration | Confirmation Email    | Check confirmation email      | Email valid            | Register                                                       | -                     | Confirmation email received   |
+
+
+
+
+                                                                                           LOGIN TEST CASES
+
+
+| Test Case ID | Module | Test Scenario         | Description                     | Pre-Condition       | Steps                           | Test Data                           | Expected Result             |
+| ------------ | ------ | --------------------- | ------------------------------- | ------------------- | ------------------------------- | ----------------------------------- | --------------------------- |
+| LG-01        | Login  | Valid Login           | Login using correct credentials | User registered     | Enter email & password          | Valid creds                         | Login successful            |
+| LG-02        | Login  | Wrong Password        | Enter wrong password            | Account exists      | Enter wrong password            | Wrong pwd                           | Error shown                 |
+| LG-03        | Login  | Unregistered Email    | Login with unknown email        | -                   | Enter unregistered email        | [xyz@test.com](mailto:xyz@test.com) | Error shown                 |
+| LG-04        | Login  | Blank Fields          | Keep fields empty               | -                   | Submit empty fields             | None                                | Required field error        |
+| LG-05        | Login  | Login + OTP           | Login requiring OTP             | MFA enabled         | Enter valid credentials         | Valid creds                         | OTP sent                    |
+| LG-06        | Login  | OTP Not Received      | No OTP arrives                  | Delay expected      | Enter login info                | -                                   | “Resend OTP” option         |
+| LG-07        | Login  | Expired OTP           | OTP expired                     | OTP generated       | Wait 5 min                      | OTP                                 | Expired OTP error           |
+| LG-08        | Login  | Invalid OTP           | Wrong OTP                       | -                   | Enter wrong OTP                 | Wrong code                          | Error shown                 |
+| LG-09        | Login  | Remember Me           | Stay signed in                  | User logged in once | Check Remember Me               | -                                   | Auto login next time        |
+| LG-10        | Login  | Rate Limit            | Too many attempts               | 5 failed logins     | Enter wrong password repeatedly | -                                   | Account temporarily blocked |
+| LG-11        | Login  | Slow Internet         | Poor connection                 | -                   | Try logging in                  | -                                   | Friendly message            |
+| LG-12        | Login  | Responsive UI         | UI responsiveness               | -                   | Open login page                 | -                                   | UI correctly loaded         |
+| LG-13        | Login  | Forgot Password       | Trigger forgot password         | -                   | Click forgot password           | Email                               | Reset link sent             |
+| LG-14        | Login  | Security Testing      | SQL Injection attempt           | -                   | Enter `' OR 1=1 --`             | Payload                             | Request blocked             |
+| LG-15        | Login  | Post-login Navigation | Redirect on success             | Valid login         | Login                           | -                                   | Redirect to dashboard       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
