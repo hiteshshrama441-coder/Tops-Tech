@@ -1,0 +1,232 @@
+1. What is the Bug Life Cycle?
+
+The Bug Life Cycle (or Defect Life Cycle) is the process a defect goes through from the moment it is found until it is closed.
+It defines the states a bug moves through and how teams handle it.
+
+
+Typical Bug Life Cycle Stages
+
+.New – Tester reports the bug for the first time.
+
+.Assigned – Lead/manager assigns it to a developer.
+
+.Open – Developer starts analyzing and working on the bug.
+
+.Fixed – Developer applies a fix.
+
+.Retest – Tester verifies if the fix works.
+
+.Verified – Tester confirms the bug is gone.
+
+.Closed – Bug is successfully fixed and closed.
+
+
+Other Possible States
+
+.Rejected – Bug is invalid.
+
+.Deferred – Bug fix is postponed.
+
+.Duplicate – Bug already exists.
+
+.Not a Bug – Expected behavior.
+
+
+
+
+
+
+2. Difference between Functional Testing and Non-Functional Testing
+
+| Functional Testing                                                Non-Functional Testing                                             |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Checks **what the system does** (features/behaviors).      | Checks **how the system performs** (quality attributes).                |
+| Validates requirements like input, output, business logic. | Validates performance, usability, security, reliability, etc.           |
+| Example: login, search, payment, form submission.          | Example: load testing, stress testing, security testing, UI/UX testing. |
+| Based on **user/business requirements**.                   | Based on **quality attributes** and performance criteria.               |
+| Done by **testers**.                                       | Done by **testers + specialized teams** (performance/security).         |
+
+
+
+
+
+
+1. Difference between Test Scenarios, Test Cases, and Test Scripts
+Test Scenario
+
+.A high-level description of what to test.
+
+.It represents end-to-end functionality.
+
+Example: Verify user can log in successfully.
+
+Test Case
+
+.A detailed document explaining how to test a scenario.
+
+.Includes steps, inputs, expected results.
+
+Example: Steps to enter username/password and check login result.
+
+Test Script
+
+.A set of instructions written in a scripting/programming language for automation.
+
+.Used in tools like Selenium, Cypress, etc.
+
+
+
+
+
+
+ 2. What is a Test Plan? What information should it cover?
+
+A Test Plan is a formal document describing:
+
+.What to test
+
+.How to test
+
+.When to test
+
+.Who will test
+
+It is a roadmap for testing activities.
+
+Contents of a Test Plan
+
+.Test objectives
+
+.Scope of testing (In-scope / Out-of-scope)
+
+.Test strategy (types of testing to be performed)
+
+.Test environment details
+
+.Test deliverables
+
+.Resources & responsibilities
+
+.Schedule & timelines
+
+.Entry and exit criteria
+
+.Tools to be used
+
+.Risk and mitigation plans
+
+
+
+
+3. What is Priority?
+
+.Priority defines how urgently a bug must be fixed.
+
+.Set by: Project Manager / Product Owner.
+
+.Focus: Business impact and deadlines.
+
+
+
+
+4. What is Severity?
+
+.Severity defines how serious the bug is from a technical perspective.
+
+.Set by: Tester/QA.
+
+.Focus: Impact on functionality.
+
+
+
+
+
+5. Bug Categories
+
+.Common bug categories include:
+
+.Functional bugs
+
+.Performance bugs
+
+.Security bugs
+
+.UI/UX bugs
+
+.Compatibility bugs
+
+.Logical / calculation bugs
+
+.Integration bugs
+
+.Usability bugs
+
+.Documentation bugs
+
+
+
+
+
+6. Advantages of Bugzilla
+
+Bugzilla is an open-source bug-tracking tool.
+Advantages:
+
+.Free and open source
+
+.Easy to track and manage defects
+
+.Customizable workflows
+
+.Email notifications for updates
+
+.Supports advanced search & reporting
+
+.Role-based access control
+
+.Integration with version control systems
+
+.Supports attachment of screenshots/logs
+
+
+
+
+
+7. Difference between Priority and Severity
+
+|     Severity                        |      Priority                                                      |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| Indicates **impact of the defect**. | Indicates **urgency to fix**.                                      |
+| Set by **QA/Testers**.              | Set by **Managers/Product Owners**.                                |
+| Technical perspective.              | Business perspective.                                              |
+| Example: App crash = High severity. | Example: Crash during a rare scenario might be low priority today. |
+
+
+
+
+
+
+8. Different Methodologies in Agile Development Model
+
+Agile supports various frameworks/methodologies:
+
+1.Scrum
+
+2.Kanban
+
+3.Extreme Programming (XP)
+
+4.Lean Development
+
+5.Crystal Methodology
+
+6.Dynamic Systems Development Method (DSDM)
+
+7.Feature-Driven Development (FDD)
+
+8.Agile Unified Process (AUP)
+
+
+
+
+
