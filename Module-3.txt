@@ -1,0 +1,119 @@
+1. High Level Requirements (HLR)
+HLR for Admin Module
+
+.The system shall allow Admin users to view and manage User Management settings.
+
+.The system shall allow Admin users to add, edit, and delete users.
+
+.The system shall allow Admin users to manage Job Titles, Pay Grades, and Employment Status.
+
+.The system shall allow Admin users to configure and manage Organization details.
+
+.The system shall allow Admin users to configure qualifications (skills, education, licenses).
+
+
+
+
+HLR for PIM Module (Personnel Information Management)
+
+.The system shall allow adding new employees.
+
+.The system shall allow searching and viewing employee details.
+
+.The system shall allow editing personal, job, and contact details of employees.
+
+.The system shall allow uploading employee documents.
+
+.The system shall allow managing employee reports.
+
+
+
+
+HLR for Recruitment Module
+
+.The system shall allow users to add job vacancies.
+
+.The system shall allow uploading candidate information.
+
+.The system shall allow shortlisting, scheduling interviews, and making hiring decisions.
+
+.The system shall allow updating recruitment status for candidates.
+
+
+
+
+
+HLR for Dashboard
+
+.The system shall display quick action shortcuts (like applying leave, viewing timesheets).
+
+.The system shall show graphs such as Leave Usage and Employee Distribution.
+
+.The system shall show notifications for pending tasks.
+
+.The system shall show employee activity and recent updates.
+
+
+
+
+3. Scenarios for Above Sections
+Admin Module Scenarios
+
+.Verify that the Admin user can successfully access the Admin module.
+
+.Verify adding a new user.
+
+.Verify editing an existing user.
+
+.Verify that a user can be deleted.
+
+.Verify viewing list of users with filters (Role & Status).
+
+
+
+
+PIM Module Scenarios
+
+.Verify adding a new employee with mandatory fields.
+
+.Verify searching an existing employee by name/ID.
+
+.Verify editing an employee’s personal information.
+
+.Verify uploading an employee document.
+
+
+
+Recruitment Module Scenarios
+
+.Verify adding a new job vacancy.
+
+.Verify adding a new candidate to a job vacancy.
+
+.Verify shortlisting a candidate.
+
+.Verify scheduling an interview for a candidate.
+
+.Verify moving candidate to "Hired" status.
+
+
+
+
+Dashboard Scenarios
+
+.Verify dashboard loads properly after login.
+
+.Verify widgets (Leave, Time, Recruitment) display accurate counts.
+
+.Verify quick actions redirect to correct modules.
+
+
+
+
+
+
+
+
+
+
+
